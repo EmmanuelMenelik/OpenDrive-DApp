@@ -33,7 +33,17 @@ npm install
 npx hardhat node
 npx hardhat run scripts/deploy.js --network localhost
 ```
+### 🔁 Updating the Contract Address
 
+Each time the Hardhat node is restarted, a new contract address is generated upon deployment.
+
+To update your frontend:
+
+1. Re-run contract deployment:
+2. Copy the deployed contract address from the terminal.
+3. Open `frontend/src/App.js` and update the following line:
+```js
+const contractAddress = "PASTE_NEW_ADDRESS_HERE";
 ### Frontend
 ```
 cd frontend
